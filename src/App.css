@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.calculator {
+    width: 350px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: 350px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .calculator form input {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: aliceblue;
+    height: 50px;
+    border-radius: 5px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+   
   }
-}
+  
+  .keypad button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: skyblue;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .keypad button.highlight {
+    background-color: skyblue;
+  }
+  
+  .keypad button:hover {
+    background-color: #e6e6e6;
+  }
+  
+  #equals {
+    background-color: #ff9800;
+    color: #fff;
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+  #equals:hover {
+    background-color: #e08b00;
+
+  }
+  
